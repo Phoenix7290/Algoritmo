@@ -1,3 +1,102 @@
-# Teste de Performance 1
+# Teste de Performance 1 (TP1)
 
-Aqui a explicação dos exercícios.
+## Comentários, explicações e pontos a notar dos exercícios
+
+### 1) List Comprehension
+
+Como o próprio nome diz, é fácil de compreender. É uma abordagem idiomática em Python, especialmente ao usar `isspace()`.
+
+**Complexidade:** `O(n)`
+
+---
+
+### 2) Ordenar 13 cartas de um baralho (clássico)
+
+Primeiramente, podemos usar **Insertion Sort**. Neste contexto, são necessários 3 deques, que podemos chamar de `A`, `B` e `C`:
+
+- `A`: deque com cartas embaralhadas
+- `B`: deque sempre ordenado
+- `C`: buffer
+
+O ponto mais interessante é a representação: usar o buffer é semelhante ao modo como uma pessoa, manualmente, tira uma carta da mão e a reposiciona ao lado.
+
+**Complexidade:** pode ser `O(n)` no melhor caso e `O(n²)` no pior caso.
+
+---
+
+### 3) Busca linear
+
+Sendo direto, em `[2, 4, 6, 8, 10, 12, 13]`, o `8` está no índice `3` (ou na 4ª posição em termos humanos).
+
+Percurso: `2 => 4 => 6 => 8`
+
+**Complexidade:** `O(n)`
+
+---
+
+### 4) Busca binária
+
+No exemplo dado, o `8` está no meio do vetor, sendo encontrado rapidamente.
+
+**Complexidade:** `O(log n)` no pior caso.
+
+---
+
+### 5) Maior número
+
+Na versão original:
+
+- `O(n²)` → `n × (n - 1)` comparações
+
+Após correção:
+
+- `O(n)` → apenas `n - 1` comparações
+
+Em resumo, manter o “melhor até agora” evita comparar tudo com tudo.
+
+---
+
+### 6) Grãos de arroz
+
+Devemos usar logaritmo na base 2 para analisar os grãos, pois o crescimento segue potências de 2:
+
+`2, 4, 8, 16, 32, ...`
+
+---
+
+### 7) Filtrar strings
+
+Resumidamente, é `O(n)`.
+
+Percorremos cada elemento exatamente uma vez.
+
+---
+
+### 8) Cocktail Bubble Sort
+
+Após pesquisa, identifiquei o **Cocktail Shaker Sort**. Ele atende ao pedido e pode reduzir passadas em alguns cenários por alternar os movimentos da esquerda para a direita e vice-versa.
+
+**Complexidade:** pode parecer `O(n)` em casos favoráveis, mas no pior caso é `O(n²)`.
+
+---
+
+### 9) Bubble Sort
+
+Bubble Sort clássico, com a variável `swapped` para interromper quando o vetor já estiver ordenado.
+
+**Complexidade:** `O(n²)` no geral e `O(n)` no melhor caso.
+
+---
+
+### 10) Bubble Sort com strings
+
+Basicamente, controla-se a ordem alfabética.
+
+Sabemos que `B > A` porque as linguagens usam códigos de caracteres (ASCII, por exemplo):
+
+- `66 = B`
+- `65 = A`
+
+Logo, `66 > 65`, justificando a afirmação anterior.
+
+Um polimorfismo natural da linguagem.
