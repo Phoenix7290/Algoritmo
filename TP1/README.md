@@ -68,7 +68,7 @@ Devemos usar logaritmo na base 2 para analisar os grãos, pois o crescimento seg
 
 Resumidamente, é `O(n)`.
 
-Percorremos cada elemento exatamente uma vez.
+Percorremos cada elemento exatamente uma vez porque a função percorre o array uma vez e usa `startswith("a")`.
 
 ---
 
