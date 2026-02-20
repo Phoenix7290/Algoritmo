@@ -60,7 +60,9 @@ Em resumo, manter o “melhor até agora” evita comparar tudo com tudo.
 
 Devemos usar logaritmo na base 2 para analisar os grãos, pois o crescimento segue potências de 2:
 
-`2, 4, 8, 16, 32, ...`
+`2⁰ = 1, 2¹ = 2, 2² = 4, 2³ = 8, 2⁴ = 16, ...`
+
+**Complexidade:** verificação de potência de 2 + logaritmo → `O(1)`.
 
 ---
 
