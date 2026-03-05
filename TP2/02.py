@@ -1,10 +1,7 @@
-# 02.py - Interseção de dois arrays O(N+M)
-
 def intersecao_linear(a, b):
     if not a or not b:
         return []
     
-    # Coloca o menor array no conjunto (economiza memória)
     if len(a) > len(b):
         a, b = b, a
     
@@ -16,7 +13,7 @@ def intersecao_linear(a, b):
     for x in b:
         if x in seen:
             resultado.append(x)
-            seen.remove(x)   # evita duplicatas na saída (se desejado)
+            seen.remove(x)
     
     return resultado
 

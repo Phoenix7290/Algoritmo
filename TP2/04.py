@@ -1,5 +1,3 @@
-# 04.py - Letra que falta (a-z)
-
 import string
 
 def letra_ausente(s):
@@ -13,8 +11,7 @@ def letra_ausente(s):
     faltam = sorted(alfabeto - presente)
     if not faltam:
         return None
-    return faltam[0]   # retorna a primeira em ordem alfabética
-
+    return faltam[0]
 
 if __name__ == "__main__":
     print("=== Teste 04.py ===\n")

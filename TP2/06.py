@@ -1,5 +1,3 @@
-# 06.py - Selection Sort com contagem
-
 def selection_sort(arr):
     comparacoes = 0
     trocas = 0

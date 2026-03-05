@@ -1,5 +1,3 @@
-# 01.py - Maior número único - quadrático vs hash
-
 def maior_unico_quadratico(nums):
     """O(n²) - dois laços"""
     comparacoes = [0]
@@ -32,7 +30,7 @@ def maior_unico_hash(nums):
         contagem[num] = contagem.get(num, 0) + 1
     
     maior = float('-inf')
-    for num in nums:           # mantém a primeira ocorrência na ordem
+    for num in nums:           
         acessos += 1
         if contagem[num] == 1:
             maior = max(maior, num)

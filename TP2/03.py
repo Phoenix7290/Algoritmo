@@ -1,5 +1,3 @@
-# 03.py - Primeiro duplicado (ordem de aparição)
-
 def primeiro_duplicado(arr):
     visto = set()
     
@@ -8,7 +6,7 @@ def primeiro_duplicado(arr):
             return valor, i
         visto.add(valor)
     
-    return None  # não deveria acontecer conforme enunciado
+    return None
 
 
 if __name__ == "__main__":

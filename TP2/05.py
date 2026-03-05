@@ -1,5 +1,3 @@
-# 05.py - Primeiro caractere único (mantém ordem)
-
 from collections import Counter
 
 def primeiro_nao_repetido(s):
